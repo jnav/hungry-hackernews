@@ -7,7 +7,7 @@ With this script I can read HN articles even when on GPRS and as a bonus I have 
 
 ## Who would use such thing?
 
-Someone like me :-) Going every day to work and reading Hacker News is fun. Avoiding advertisments and useless text which doesn't relate to article + saving on bandwidth is a good thing.. 
+Someone like me :-) Going every day to work and reading Hacker News is fun. Avoiding advertisments and useless text which doesn't relate to article + saving on bandwidth is even better :-)
 
 ## Requirements
 * curl enabled hosting
@@ -18,6 +18,8 @@ Someone like me :-) Going every day to work and reading Hacker News is fun. Avoi
 Just place this script into your DocumentRoot and call it from browser!
 
 ## Screenshot
+
+each article has [ TXT ] link which leads to Instapaper (no account required!)
 
 ![Hungry Hacker News](http://svatba.at/hn.png)
 
