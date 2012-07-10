@@ -9,6 +9,10 @@ With this script I can read HN articles even when on GPRS and as a bonus I have 
 
 Someone like me :-) Going every day to work and reading Hacker News is fun. Avoiding advertisments and useless text which doesn't relate to article + saving on bandwidth is even better :-)
 
+## Demo
+
+Please be gentle to this [demo page](http://www.svatba.at/hn.php)
+
 ## Requirements
 * curl enabled hosting
 * write permission on filesystem
