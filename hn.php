@@ -22,7 +22,7 @@ fclose($fp);
 $hn = file_get_contents($filename);
 
 //set regexp pattern
-$pattern = '/s="title"><a href=\"(.+?)\"(.+?)\/a>/';
+$pattern = '/s="title"><a href=\"([^n].+?)\"(.+?)\/a>/';
 
 //set replace string
 $replacement = 's="title"><a href="${1}"${2}/a><span onClick="window.location=\'http://www.instapaper.com/text?u=\'+encodeURIComponent(\'${1}\');"> [ TXT ] </span>';
