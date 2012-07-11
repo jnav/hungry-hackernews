@@ -33,9 +33,14 @@ $pattern='/f="([^"]*)"( rel="nofollow")?>More<\/a>/';
 $replacement='f="?p=${1}">More</a>';
 $hn = preg_replace($pattern, $replacement,$hn);
 
-// do the magic
+// insert [ TXT ] links
 $pattern = '/s=\"title\"><a href=\"([^\?].+?)\"(.+?)\/a>/';
 $replacement = 's="title"><a href="${1}"${2}/a><span onClick="window.location=\'http://www.instapaper.com/text?u=\'+encodeURIComponent(\'${1}\');"> [ TXT ] </span>';
+$hn = preg_replace($pattern, $replacement,$hn);
+
+// prepend full HN url for comments
+$pattern = '/href=\"(item[^\"]*)\"(.+?)\/a>/';
+$replacement = 'href="http://news.ycombinator.com/${1}"${2}/a>';
 // replace pattern with string and print to browser
 echo preg_replace($pattern, $replacement,$hn);
 
